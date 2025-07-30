@@ -97,3 +97,16 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+
+#
+/[Aa]ssets/PolygonNatureBiomes
+/[Aa]ssets/Free Wild Animal 3D Models
+/[Aa]ssets/Models
+/[Aa]ssets/MetaXR
+/[Aa]ssets/XR
+/[Aa]ssets/XRI
+/[Aa]ssets/ForestScenes/**
+!/[Aa]ssets/ForestScenes/**/*.unity
+!/[Aa]ssets/ForestScenes/**/*.unity.meta
+
+
