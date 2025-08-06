@@ -4,12 +4,24 @@ using UnityEngine;
 
 public class ForcedStop : MonoBehaviour
 {
+    public bool end=false;
+    [SerializeField] private GameObject endTEXT;
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<Bicycle>())
         {
             Bicycle bicycle = other.GetComponent<Bicycle>();
-            StartCoroutine(ForceStopCoroutine(bicycle));
+            if(!end)
+            {
+                StartCoroutine(ForceStopCoroutine(bicycle));
+            }
+            else
+            {
+                if(endTEXT != null) {
+                    endTEXT.SetActive(true);
+                    bicycle.bicycleStoper = true;
+                }
+            }
 
         }
     }

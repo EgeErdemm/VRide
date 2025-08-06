@@ -22,20 +22,13 @@ public class SceneAdditiveManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(this.gameObject);
-        sceneIndex = 1;
-    }
-    private void Start()
-    {
-        loadedScenes.Add("scene0");
-        //LoadSceneAdditive("scene2");
-        LoadOrgansCycle();
+        sceneIndex = 2; // baslangýcta 2 tane sahne yükleniyor o yüzden index 2 
     }
 
     public void StartCycling()
     {
         scene0Cam.SetActive(false);
-        UnloadScene("scene0");
-        LoadSceneAdditive("scene1");
+        SceneManager.LoadScene("scene1");
         LoadSceneAdditive("scene2");
 
     }
@@ -55,7 +48,6 @@ public class SceneAdditiveManager : MonoBehaviour
             StartCoroutine(UnloadSceneCoroutine(sceneName));
             Debug.Log("scene deleting:" + sceneName);
         }
-
     }
 
     IEnumerator LoadSceneCoroutine(string sceneName)
@@ -84,9 +76,10 @@ public class SceneAdditiveManager : MonoBehaviour
     {
 
         SceneManager.LoadScene("Organs");
-
-
     }
-    
+    public void GoFirstScene()
+    {
+        SceneManager.LoadScene("scene0");
+    }
 
 }

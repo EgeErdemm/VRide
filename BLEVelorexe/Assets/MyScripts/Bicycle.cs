@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Bicycle : MonoBehaviour
 {
+    public bool bicycleStoper=false;
     public int voiceCount = 0;
     [SerializeField] private GameObject Wheele1, Wheele2, Pedal;
     [SerializeField] private float rotationSpeed;
@@ -31,12 +32,21 @@ public class Bicycle : MonoBehaviour
 
     void Update()
     {
-        Vector3 forward = transform.forward;
-        rb.velocity = forward * speed;
-        if(rb.velocity.sqrMagnitude <0.2f) { rb.velocity = Vector3.zero; return; }
-        RotateLocally(Pedal, 0f);
-        RotateLocally(Wheele1, 1f);
-        RotateLocally(Wheele2, 1f);
+        if(!bicycleStoper)
+        {
+            Vector3 forward = transform.forward;
+            rb.velocity = forward * speed;
+            if (rb.velocity.sqrMagnitude < 0.2f) { rb.velocity = Vector3.zero; return; }
+            RotateLocally(Pedal, 0f);
+            RotateLocally(Wheele1, 1f);
+            RotateLocally(Wheele2, 1f);
+        }
+        else
+        {
+            speed = 0f;
+            rb.velocity = Vector3.zero;
+        }
+
     }
 
     private void RotateLocally(GameObject obj, float pedalSpeed)
