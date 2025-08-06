@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ForestScenes/scene7.unity
     guid: 256c99d2d2a1df74ca26982d18a29edd
+  - enabled: 1
+    path: Assets/ForestScenes/Organs.unity
+    guid: 4889dc70df338e54ba9298da58108e91
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 36d1967b921945242a0c809e9d5fc85b,
       type: 2}

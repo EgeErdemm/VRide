@@ -27,7 +27,8 @@ public class SceneAdditiveManager : MonoBehaviour
     private void Start()
     {
         loadedScenes.Add("scene0");
-        LoadSceneAdditive("scene2");
+        //LoadSceneAdditive("scene2");
+        LoadOrgansCycle();
     }
 
     public void StartCycling()
@@ -77,6 +78,14 @@ public class SceneAdditiveManager : MonoBehaviour
     public bool IsSceneLoaded(string sceneName)
     {
         return loadedScenes.Contains(sceneName);
+    }
+    
+    public void LoadOrgansCycle()
+    {
+
+        SceneManager.LoadScene("Organs");
+
+
     }
     
 

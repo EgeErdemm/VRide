@@ -6,11 +6,12 @@ using UnityEngine;
 
 public class Bicycle : MonoBehaviour
 {
+    public int voiceCount = 0;
     [SerializeField] private GameObject Wheele1, Wheele2, Pedal;
     [SerializeField] private float rotationSpeed;
     private Rigidbody rb;
 
-    private float speed = 0f;
+    public float speed = 0f;
     private IEventBus eventBus;
     private void Awake()
     {

@@ -21,7 +21,7 @@ RenderSettings:
   m_FogDensity: 0.001
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 1, g: 0.6039216, b: 0.4, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 0.84313726, b: 0.5882353, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -860,7 +860,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7708b83aeadeacd46b767324a323d49f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 315.42654
+      value: 312.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7708b83aeadeacd46b767324a323d49f,
         type: 3}
@@ -1204,12 +1204,90 @@ Transform:
   m_GameObject: {fileID: 1125119878}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 49.4, y: 0.054787677, z: 325}
+  m_LocalPosition: {x: 49.4, y: 0.054787677, z: 300}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1312449458
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1389414262705001862, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389414262705001862, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389414262705001862, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 290
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389414262705001862, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389414262705001862, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389414262705001862, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389414262705001862, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389414262705001862, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389414262705001862, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1389414262705001862, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5653579980592022594, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: m_Name
+      value: VoiceTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356125057051804962, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: startIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356125057051804962, guid: 48b7ed11a089545488f22b32e8c4620f,
+        type: 3}
+      propertyPath: playAbleCount
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 48b7ed11a089545488f22b32e8c4620f, type: 3}
 --- !u!1 &1448614003
 GameObject:
   m_ObjectHideFlags: 0
@@ -2169,7 +2247,7 @@ Transform:
   m_GameObject: {fileID: 2013213064}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 46.07, y: 2.186, z: 313.75}
+  m_LocalPosition: {x: 46.07, y: 2.186, z: 310}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2463,3 +2541,4 @@ SceneRoots:
   - {fileID: 469335206}
   - {fileID: 1545823792}
   - {fileID: 480980460}
+  - {fileID: 1312449458}
