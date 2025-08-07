@@ -106,7 +106,7 @@ InitTestScene*.unity*
 #
 /[Aa]ssets/PolygonNatureBiomes/PNB_Meadow_Forest/Scene
 #/[Aa]ssets/PolygonNatureBiomes/PNB_Meadow_Forest/Terrain
-/[Aa]ssets/PolygonNatureBiomes/PNB_Meadow_Forest/Textures
+#/[Aa]ssets/PolygonNatureBiomes/PNB_Meadow_Forest/Textures
 #/[Aa]ssets/PolygonNatureBiomes/PNB_Meadow_Forest/FX
 
 # Ayrıca .meta dosyalarını her yerde takip et
