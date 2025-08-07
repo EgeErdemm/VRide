@@ -105,8 +105,8 @@ InitTestScene*.unity*
 #/[Aa]ssets/MetaXR
 #/[Aa]ssets/XR
 #/[Aa]ssets/XRI
-/[Aa]ssets/ForestScenes/**
-!/[Aa]ssets/ForestScenes/**/*.unity
-!/[Aa]ssets/ForestScenes/**/*.unity.meta
+#/[Aa]ssets/ForestScenes/**
+#!/[Aa]ssets/ForestScenes/**/*.unity
+#!/[Aa]ssets/ForestScenes/**/*.unity.meta
 
 
