@@ -100,7 +100,7 @@ InitTestScene*.unity*
 
 #
 /[Aa]ssets/PolygonNatureBiomes
-/[Aa]ssets/Free Wild Animal 3D Models
+#/[Aa]ssets/Free Wild Animal 3D Models
 /[Aa]ssets/Models
 /[Aa]ssets/MetaXR
 /[Aa]ssets/XR

@@ -282,7 +282,7 @@ GameObject:
   - component: {fileID: 227781843}
   - component: {fileID: 227781842}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: EndArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -962,7 +962,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Oyun Bitti\nOynad\u0131\u011F\u0131n\u0131z i\xE7in Te\u015Fekk\xFCr Ederim"
+  m_text: "Oyun Bitti\nOynad\u0131\u011F\u0131n\u0131z i\xE7in Te\u015Fekk\xFCr Ederim\nEge
+    Erdem"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1904,6 +1905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   end: 1
   endTEXT: {fileID: 1830899052}
+  stopAndStartTxt: {fileID: 0}
 --- !u!65 &923848504
 BoxCollider:
   m_ObjectHideFlags: 0

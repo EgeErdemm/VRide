@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ForcedStop : MonoBehaviour
 {
     public bool end=false;
     [SerializeField] private GameObject endTEXT;
+    [SerializeField] private TextMeshProUGUI stopAndStartTxt;
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<Bicycle>())
@@ -48,6 +52,8 @@ public class ForcedStop : MonoBehaviour
             yield return null; 
         }
         parentTransform.position = targetPosition;
+        if(stopAndStartTxt != null) { stopAndStartTxt.text = "Hadi sürmeye baþlayalým"; }
+
     }
 
 }
