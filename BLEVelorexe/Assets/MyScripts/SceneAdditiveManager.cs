@@ -79,7 +79,17 @@ public class SceneAdditiveManager : MonoBehaviour
     }
     public void GoFirstScene()
     {
+        foreach (string sceneName in loadedScenes)
+        {
+            StartCoroutine(UnloadSceneCoroutine(sceneName));
+        }
+
+        loadedScenes.Clear();
+        sceneIndex = 0;
         SceneManager.LoadScene("scene0");
+        UnloadScene("scene1");
+        UnloadScene("Organs");
+ 
     }
 
 }

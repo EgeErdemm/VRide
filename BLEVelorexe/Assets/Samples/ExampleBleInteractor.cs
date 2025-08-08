@@ -2,6 +2,7 @@
 using Android.BLE;
 using Android.BLE.Commands;
 using UnityEngine.Android;
+using System.Collections;
 
 public class ExampleBleInteractor : MonoBehaviour
 {
@@ -43,5 +44,19 @@ public class ExampleBleInteractor : MonoBehaviour
     {
         DeviceRowView button = Instantiate(_deviceButton, _deviceList);
         button.Show(name, device);
+    }
+
+    IEnumerator ScanLoop()
+    {
+        while (true)
+        {
+            ScanForDevices();
+            yield return new WaitForSeconds(15f);
+        }
+    }
+
+    private void Start()
+    {
+        StartCoroutine(ScanLoop());
     }
 }

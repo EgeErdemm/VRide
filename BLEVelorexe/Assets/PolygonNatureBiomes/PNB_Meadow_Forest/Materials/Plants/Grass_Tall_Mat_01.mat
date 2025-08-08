@@ -28,12 +28,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: fecbf02c50d091d45bcab8716ebe97e5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BotTexture0:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: c0654e27205c4a74794633f81a33b4f2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -136,6 +140,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 5f36e0d7b3dd1724aad2f9a9dc18bf97, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Texture0:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -200,16 +208,24 @@ Material:
     m_Floats:
     - _AlphaClip: 0.5
     - _AlphaCutoff: 0.5
+    - _AlphaToMask: 1
     - _Big_Wave: 10
     - _Big_WindAmount: 1.22
     - _Big_Windspeed: 1.84
+    - _Blend: 0
+    - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
+    - _ClearCoatMask: 0
+    - _ClearCoatSmoothness: 0
     - _ColourNoiseLargeScale: 0.186
     - _ColourNoiseScale: 0.108
     - _ColourNoiseSmallScale: 0.459
+    - _Cull: 2
     - _Cutoff: 0.3
+    - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _DstBlendAlpha: 0
     - _EmissiveAmount: 0
     - _EnvironmentReflections: 1
     - _FlatColourSwitch: 1
@@ -264,6 +280,8 @@ Material:
     - _SnowTiling: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
+    - _Surface: 0
     - _Tiling: 1
     - _Tint_Tiling: 0.5
     - _TotalWindAmount: 0.5
@@ -281,6 +299,7 @@ Material:
     - _WindNoiseScale2: 0.5
     - _WindWorldScale: 0.08
     - _WindWorldScale1: 0.001
+    - _WorkflowMode: 1
     - _Y_multiplier: -0.5
     - _ZWrite: 1
     - __dirty: 0
@@ -295,6 +314,7 @@ Material:
     - _tempNoise: 0.29
     - _worldScale: 0.67
     m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColour: {r: 0.07843138, g: 0.02015968, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 1, g: 1, b: 1, a: 0}
@@ -310,6 +330,7 @@ Material:
     - _LeafNoiseLargeColour: {r: 0.3237108, g: 0.43137255, b: 0, a: 1}
     - _LeafTint: {r: 0.07843138, g: 0.02015968, b: 0, a: 0}
     - _SnowColour: {r: 1, g: 1, b: 1, a: 0}
+    - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tint: {r: 0, g: 0, b: 0, a: 0}
     - _TrunkBaseColour: {r: 0.07843138, g: 0.02015968, b: 0, a: 0}
     - _TrunkEmissiveColour: {r: 0, g: 0, b: 0, a: 0}
@@ -317,3 +338,16 @@ Material:
     - _TrunkTint: {r: 0.07843138, g: 0.02015968, b: 0, a: 0}
     - _vertColourEmit: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
+--- !u!114 &7566452918154010028
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7

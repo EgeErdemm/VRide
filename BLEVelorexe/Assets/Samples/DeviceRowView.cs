@@ -49,13 +49,32 @@ public class DeviceRowView : MonoBehaviour
     // panel referans veriyorum ki scale 0 yapayim connected oldugunda
     [SerializeField] private RectTransform panelRectTransform;
     [SerializeField] private RectTransform startGamePanel;
+    [SerializeField] private RectTransform BleBaglantiAramaTexti;
 
+    // permission nesnesini alıyorum request atıyorum normalde scan buttonu yapardı.
+    [SerializeField] private AppPermissions _appPermissions;
 
     private IEventBus eventBus;
 
     private void Awake()
     {
         eventBus =EventBus.Instance;
+    }
+
+    private void Start()
+    {
+        //_appPermissions.RequestPermissions();
+        StartCoroutine(ScanEvry10Sec());
+    }
+
+    IEnumerator ScanEvry10Sec()
+    {
+        while (true)
+        {
+            _appPermissions.RequestPermissions();
+            yield return new WaitForSeconds(10f);
+
+        }
     }
 
     public void Show(string uuid, string name)
@@ -299,6 +318,7 @@ public class DeviceRowView : MonoBehaviour
     {
         panelRectTransform.localScale = Vector3.zero;
         startGamePanel.localScale = Vector3.one;
+        BleBaglantiAramaTexti.localScale = Vector3.zero;
     }
 
 
